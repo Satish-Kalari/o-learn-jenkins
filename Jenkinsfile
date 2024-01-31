@@ -6,12 +6,13 @@ pipeline {
     } 
     // Just like variables 
     environment {
-        GREETING = 'Hello Jenkins'
-        disableConcurrentBuilds()
+        GREETING = 'Hello Jenkins'        
     }
     // Terminating Build if it takes certain time
      options {
-        timeout(time: 1, unit: 'HOURS') 
+        timeout(time: 1, unit: 'HOURS')
+        disableConcurrentBuilds() 
+    }
 
     // BUILD
     stages {
