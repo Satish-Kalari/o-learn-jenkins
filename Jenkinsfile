@@ -4,6 +4,7 @@ pipeline {
             label 'AGENT-1'
         }
     } 
+    
     // Just like variables 
     environment {
         GREETING = 'Hello Jenkins'        
