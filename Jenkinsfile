@@ -35,4 +35,5 @@ pipeline {
          success { 
             echo 'This runs when pipeline is SUCCESSFUL'
         }
+    }
 }
