@@ -4,9 +4,14 @@ pipeline {
             label 'AGENT-1'
         }
     } 
+    // Just like variables 
     environment {
         GREETING = 'Hello Jenkins'
+        disableConcurrentBuilds()
     }
+    // Terminating Build if it takes certain time
+     options {
+        timeout(time: 1, unit: 'HOURS') 
 
     // BUILD
     stages {
